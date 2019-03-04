@@ -60,4 +60,16 @@ $userPerms = array(
 );
 add_role('user', 'End User', $userPerms);
 
+// =======================================================================//
+//   Login and register functions                                         //
+// =======================================================================//
+add_action('init', 'sm_create_new_user');
+function sm_create_new_user() {
+    if(!isset($_POST['create_account_nonce']) || !wp_verify_nonce($_POST['create_account_nonce'], 'create_account')); {
+        echo "ERROR IN VERIFYING NONCE";
+    }
+    else {
+
+    }
+}
 ?>
