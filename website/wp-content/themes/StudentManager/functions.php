@@ -45,4 +45,19 @@ function sm_enqueue_styles() {
 add_action('wp_enqueue_scripts', 'sm_enqueue_styles');
 add_action('wp_enqueue_scripts', 'sm_enqueue_scripts');
 
+// =======================================================================//
+//   Modify WordPress user roles                                          //
+// =======================================================================//
+//Remove existing roles
+remove_role('subscriber');
+remove_role('editor');
+remove_role('contributor');
+remove_role('author');
+
+//Create new roles
+$userPerms = array(
+    'read' => true
+);
+add_role('user', 'End User', $userPerms);
+
 ?>
