@@ -1,4 +1,4 @@
-</div> <!-- End body wrapper -->
+</div> <!-- End Body Content -->
 <footer>
     <div class="container-fluid" id="footer-wrap">
         <div class="container">
