@@ -12,3 +12,24 @@ Version: 0.1
 body {
     font-family: "Montserrat", sans-serif
 }
+
+/*Add padding to first container to give space between navbar*/
+body > .container-fluid {
+    padding-top:50px;
+}
+
+
+/*=================*/
+/* LOGIN STYLES    */
+/*=================*/
+#create-account-btn, #login-btn {
+    display:block;
+    margin:auto;
+    margin:25px auto;
+}
+
+.login-form-wrap, .create-acc-wrap {
+    display:block;
+    margin:auto;
+    margin:25px auto;
+}
