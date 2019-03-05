@@ -63,13 +63,19 @@ add_role('user', 'End User', $userPerms);
 // =======================================================================//
 //   Login and register functions                                         //
 // =======================================================================//
-add_action('init', 'sm_create_new_user');
-function sm_create_new_user() {
-    if(!isset($_POST['create_account_nonce']) || !wp_verify_nonce($_POST['create_account_nonce'], 'create_account')); {
-        echo "ERROR IN VERIFYING NONCE";
-    }
-    else {
-
-    }
+function customise_login() {
+    echo '<link rel="stylesheet" type="text/css" href="' . bloginfo('template_directory') . '/css/login.css"';
 }
+function custom_login_logo_url() {
+    return get_bloginfo( 'url' );
+}
+function custom_login_logo_url_title() {
+    return 'Student Manager';
+}
+
+add_action('login_head', 'customise_login');
+add_filter( 'login_headerurl', 'custom_login_logo_url' );
+add_filter( 'login_headertitle', 'custom_login_logo_url_title' );
+
+
 ?>
