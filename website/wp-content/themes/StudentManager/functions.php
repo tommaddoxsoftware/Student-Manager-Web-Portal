@@ -72,6 +72,27 @@ function custom_login_logo_url() {
 function custom_login_logo_url_title() {
     return 'Student Manager';
 }
+function custom_login_redirect($redirect_to, $request, $user) {
+global $user;
+if(isset( $user->roles ) && is_array( $user->roles )) {
+    //If admin, redirect to wp dashboard
+    if( in_array( "administrator", $user->roles ) ) {
+        return $redirect_to;
+    }
+
+    //All others redirect to user dashboard
+    else {
+        $url = echo esc_url(home_url('/user_dashboard'));
+        return $url
+    }
+}
+else
+{
+return $redirect_to;
+}
+}
+add_filter("login_redirect", "custom_login_redirect", 10, 3);
+
 
 add_action('login_head', 'customise_login');
 add_filter( 'login_headerurl', 'custom_login_logo_url' );
