@@ -22,6 +22,7 @@ body > .container-fluid {
 /*=================*/
 /* LOGIN STYLES    */
 /*=================*/
+
 #create-account-btn, #login-btn {
     display:block;
     margin:auto;
@@ -31,5 +32,51 @@ body > .container-fluid {
 .login-form-wrap, .create-acc-wrap {
     display:block;
     margin:auto;
-    margin:25px auto;
+    margin:5px auto;
+}
+
+.login-form-wrap {
+
+}
+
+#loginform p {
+    padding:20px 5px;
+}
+
+#loginform label {
+    text-align: center;
+    display: block;
+    font-size: 20px;
+}
+
+/*Styling for inputs */
+#loginform input[type="text"], #loginform input[type="password"] {
+    display:block;
+    width:100%;
+    height:34px;
+    padding:6px 12px;
+    font-size:14px;
+    color:#555;
+    background-color:#fff;
+    border: 1px solid #ccc;
+    border-radius:4px;
+}
+
+/*Styling for button*/
+#loginform input[type="submit"] {
+    width:75%;
+    margin:auto;
+    display:block;
+    border-radius:4px;
+    font-weight:400;
+    text-align:center;
+    white-space:nowrap;
+    vertical-align:middle;
+    border:1px solid transparent;
+    font-size:14px;
+    padding:6px 12px;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+    color:white;
+    font-weight:bold;
 }
