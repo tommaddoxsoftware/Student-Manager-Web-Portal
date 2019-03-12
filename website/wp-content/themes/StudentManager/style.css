@@ -36,11 +36,18 @@ body > .container-fluid {
 }
 
 .login-form-wrap {
+    width:100%;
+    margin:auto;
+    display:block;
+    text-align:center;
+}
+
+#loginform {
 
 }
 
 #loginform p {
-    padding:20px 5px;
+    padding:8px 5px;
 }
 
 #loginform label {
