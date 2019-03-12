@@ -1,7 +1,39 @@
-body.login
+.login h1 a
 {
-    background-image:url("../assets/backgrounds/login-page-bg.jpg");
-    background-repeat:no-repeat;
-    background-attachment:fixed;
-    background-position:center;
+    background-image:url("../assets/brand/mylife_logo.jpg");
+    height: 150px;
+    background-size: cover;
+    width: 300px;
+    border-radius: 15px;
+}
+
+#login {
+    width:100%;;
+    display:block;
+    margin:auto;
+    text-align:center;
+}
+
+form, p.message {
+    max-width:300px;
+    margin:auto!important;
+    display:block;
+}
+
+p.message {
+    padding: 12px 22px!important;
+    margin-bottom: 10px!important;
+}
+
+label {
+    display:block;
+    margin:auto;
+}
+
+#wp-submit {
+    margin: auto;
+    display: block;
+    float: none;
+    border-radius:25px;
+    width:100%;
 }
