@@ -37,7 +37,7 @@ function sm_enqueue_styles() {
     wp_enqueue_style('bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css' );
 	wp_enqueue_style('bootstrap-datepicker', get_template_directory_uri().'/vendor/bootstrap-datepicker-1.6.4/css/bootstrap-datepicker.min.css');
 	wp_enqueue_style('custom_styles', get_template_directory_uri() . '/style.css' );
-	wp_enqueue_style('fontawesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' );
+	wp_enqueue_style('fontawesome', 'https://use.fontawesome.com/releases/v5.7.2/css/all.css' );
 	wp_enqueue_style('googleFonts', 'https://fonts.googleapis.com/css?family=Lato|Montserrat|Open+Sans|Roboto:400,700,900');
 }
 
