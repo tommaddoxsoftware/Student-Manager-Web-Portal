@@ -3,22 +3,23 @@ body {
 }
 .login h1 a
 {
-    background-image:url("../assets/brand/mylife_logo.jpg");
+    background-image:url("../assets/brand/mylife_logo.png");
     height: 150px;
     background-size: cover;
-    width: 300px;
+    max-width: 500px;
     border-radius: 15px;
 }
 
 #login {
-    width:100%;;
+    width:100%;
+    padding: 0px;
     display:block;
     margin:auto;
     text-align:center;
 }
 
 form, p.message, div#login_error {
-    max-width:300px;
+    max-width:500px;
     margin:auto!important;
     display:block;
     background-color: #3E92CC!important;
@@ -33,15 +34,6 @@ form a, p.message a, div#login_error a {
 p.message, div#login_error {
     padding: 12px 22px!important;
     margin-bottom: 10px!important;
-}
-
-input[type="text"], input[type="number"], input[type="email"] {
-    background-color:#A9BCD0!important;
-    border-color: #A9BCD0;
-    background-color: #A9BCD0!important;
-    border-color: #A9BCD0!important;
-    border-radius: 7px;
-    padding: 5px 7px!important;
 }
 
 label {
