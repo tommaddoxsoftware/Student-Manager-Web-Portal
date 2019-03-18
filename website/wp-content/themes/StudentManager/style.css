@@ -6,9 +6,9 @@ Version: 0.1
 */
 
 
-/*=================*/
+/*================*/
 /* GENERAL STYLES */
-/*=================*/
+/*================*/
 body {
     font-family: "Montserrat", sans-serif
 }
@@ -16,6 +16,33 @@ body {
 /*Add padding to first container to give space between navbar*/
 body > .container-fluid {
     padding-top:50px;
+}
+
+/*================*/
+/* NAVBAR STYLES  */
+/*================*/
+.navbar-custom {
+    background-color: #3E92CC;
+}
+
+/*================*/
+/* FOOTER STYLES  */
+/*================*/
+#footer-wrap {
+    background-color: #2E4057;
+}
+#footer-contrast {
+    background-color: #282a2b
+}
+
+#footer-wrap, #footer-contrast {
+    color:white;
+}
+
+footer a {
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
 }
 
 
@@ -86,4 +113,12 @@ body > .container-fluid {
     border-color: #2e6da4;
     color:white;
     font-weight:bold;
+}
+
+/*=======================*/
+/* USER DASHBOARD STYLES */
+/*=======================*/
+#user-dash-tabs {
+    width:100%;
+    margin-top:50px;
 }
