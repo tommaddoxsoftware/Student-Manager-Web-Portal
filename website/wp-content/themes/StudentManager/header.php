@@ -16,9 +16,9 @@
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="65">
-	<nav class="navbar navbar-expand-lg navbar-dark navbar-custom bg-light ">
+	<nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
 		<div class="container-fluid" id="nav-row">
-			<img class="img-responsive logo" src="<?bloginfo('template_directory')?>/assets/logos/logo.png" height="120"/>
+			<img class="img-responsive logo" src="<?bloginfo('template_directory')?>/assets/brand/mylife_logo.png" height="120"/>
 			<button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#sm-navbar-collapse" aria-controls="sm-navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
