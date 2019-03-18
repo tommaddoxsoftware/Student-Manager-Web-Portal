@@ -27,24 +27,19 @@
             </div>
             <div class="col-md-4" id="social">
                 <div class="row">
-                    <div class="col-3">
+                    <div class="col-4">
                         <a href="#">
-                            <img src="<?echo bloginfo('template_directory')?>/assets/icons/social/fb-social.png" alt="social-media icon facebook"/>
+                            <i class="fab fa-facebook-square"></i>
                         </a>
                     </div>
-                    <div class="col-3">
+                    <div class="col-4">
                         <a href="#">
-                            <img src="<?echo bloginfo('template_directory')?>/assets/icons/social/twitter-social.png" alt="social-media icon twitter"/>
+                            <i class="fab fa-twitter-square"></i>
                         </a>
                     </div>
-                    <div class="col-3">
-                        <a href="#">
-                            <img src="<?echo bloginfo('template_directory')?>/assets/icons/social/yt-social.png" alt="social-media icon youtube"/>
-                        </a>
-                    </div>
-                    <div class="col-3">
+                    <div class="col-4">
                         <a href="contact-us">
-                            <img src="<?bloginfo('template_directory')?>/assets/icons/social/contact-social.png" alt="social-media icon contact"/>
+                            <i class="fas fa-envelope-square"></i>
                         </a>
                     </div>
                 </div>
