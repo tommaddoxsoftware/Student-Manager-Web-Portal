@@ -4,13 +4,20 @@ Template Name: User Dashboard
 */
 
 //Check user is logged in, if not - redirect to login
-/*if(!is_user_logged_in()) {
+if(!is_user_logged_in()) {
     //Redirect to login page
+    $redirUrl = home_url() . "/wp-login.php";
+    header('Location: ' . $redirUrl);
 }
 else {
-*/
+
 get_header();
 $usr = wp_get_current_user();
+$name = get_the_author_meta('first_name', $usr->ID) . " " . get_the_author_meta('last_name', $usr->ID);
+
+if(empty($name) || trim($name) == "") {
+    $name = "UNDEFINED";
+}
 ?>
 <div class="row">
     <div class="container">
@@ -19,7 +26,7 @@ $usr = wp_get_current_user();
                 <img src="https://placehold.it/150x150" height="150" width="150" id="user_profile_pic" class="rounded mx-auto d-block" alt="profile picture">
             </div>
             <div class="col-sm-8">
-                <h2><?$usr->user_firstname . " " . $usr->user_lastname;?></h2>
+                <h2><?echo $name?></h2>
                 <small><a href="#">Not you? Log out</a></small>
             </div>
         </div>
@@ -50,5 +57,5 @@ $usr = wp_get_current_user();
 <?
 
 get_footer();
-//} //End if(!is_user_logged_in())
+} //End if(!is_user_logged_in())
 ?>
