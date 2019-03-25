@@ -4,14 +4,20 @@ body {
 .login h1 a
 {
     background-image:url("../assets/brand/mylife_logo.png");
-    height: 150px;
-    background-size: cover;
-    max-width: 500px;
+    background-size: contain;
+    background-position: center bottom;
+    height:200px;
+    width:100%;
     border-radius: 15px;
 }
 
+#nav a, #backtoblog a  {
+    color: white!important;
+    font-weight:bold;
+}
+
 #login {
-    width:100%;
+    width:90%;
     padding: 0px;
     display:block;
     margin:auto;
@@ -22,7 +28,7 @@ form, p.message, div#login_error {
     max-width:500px;
     margin:auto!important;
     display:block;
-    background-color: #3E92CC!important;
+    background-color: #a9bcd0!important;
     border-radius:4px;
     color:white;
 }
@@ -42,13 +48,21 @@ label {
     color:white!important;
 }
 
+p.forgetmenot {
+    width:100%;
+}
+p.forgetmenot input {
+    margin:auto;
+    display:block;
+}
+
 #wp-submit {
     margin: auto;
     display: block;
     float: none;
     border-radius:25px;
     width:100%;
-    background-color: #197278!important;
+    background-color: #3e92cc!important;
     font-weight:bold;
     color: white!important;
 }
