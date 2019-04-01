@@ -6,8 +6,15 @@ if(is_admin()) {
     include("admin_functions.php");
 }
 
+//Composer autoload
+require_once 'vendor/autoload.php';
+
 //Ajax functions
 include "ajax_functions.php";
+
+//Facebook SDK functions
+include "facebook_funcs.php";
+
 
 // =======================================================================//
 //   Register navbar/navwalker                                            //
