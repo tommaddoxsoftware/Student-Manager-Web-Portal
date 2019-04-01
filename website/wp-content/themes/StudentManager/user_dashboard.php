@@ -15,6 +15,8 @@ get_header();
 $usr = wp_get_current_user();
 $name = get_the_author_meta('first_name', $usr->ID) . " " . get_the_author_meta('last_name', $usr->ID);
 
+$fbLoginUrl = GetFbLoginUrl();
+
 if(empty($name) || trim($name) == "") {
     $name = "UNDEFINED";
 }
@@ -44,6 +46,42 @@ if(empty($name) || trim($name) == "") {
             </ul>
             <div class="tab-content" id="user-dash-tab-content">
                 <div class="tab-pane fade show active" id="services" role="tabpanel" aria-labelledby="services-tab">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="card">
+                                    <img class="card-img-top" src="https://placehold.it/280x180" alt="facebook-service-card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Connect Facebook</h5>
+                                        <p class="card-text">Connect your facebook account to your MyLife account</p>
+                                        <a href="<?echo $fbLoginUrl;?>" class="btn btn-primary">Connect</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="card">
+                                    <img class="card-img-top" src="https://placehold.it/280x180" alt="facebook-service-card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Connect Twitter</h5>
+                                        <p class="card-text">Connect your twitter account to your MyLife account</p>
+                                        <a href="#" class="btn btn-primary">Connect</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="card">
+                                    <img class="card-img-top" src="https://placehold.it/280x180" alt="facebook-service-card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Connect Facebook</h5>
+                                        <p class="card-text">Connect your facebook account to your MyLife account</p>
+                                        <a href="#" class="btn btn-primary">Connect</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
                 </div>
                 <div class="tab-pane fade" id="details" role="tabpanel" aria-labelledby="details-tab">
                 </div>
